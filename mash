@@ -1,0 +1,1 @@
+erl -name mase_$RANDOM@127.0.01  -remsh $1  -hidden
