@@ -1,0 +1,1 @@
+EJABBERD_CONFIG_PATH=~/source/services/ejabberd_data/ejabberd.yml erl -pa ebin -pa deps/*/ebin -pa test -pa deps/elixir/lib/*/ebin/ -s ejabberd
