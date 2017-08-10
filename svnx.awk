@@ -1,5 +1,7 @@
-@include "ignore"
-
+@include "/Users/zhuoyikang/source/bin/ignore.awk"
 {
-    print $2
+
+    if(ignores[$2]!= "true") {
+        print
+    }
 }
