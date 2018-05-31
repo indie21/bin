@@ -1,2 +1,2 @@
-export IP=`ifconfig lo0 | grep  "inet " | awk '{print $2}'`
+export IP=`ifconfig en0 | grep  "inet " | awk '{print $2}'`
 $@

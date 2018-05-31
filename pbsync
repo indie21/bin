@@ -1,12 +1,12 @@
 #! /bin/bash
 srcdir=~/source/go/src/oops/common/pb
 srcdir2=~/source/go/src/oops/pd
-destdir=~/source/mass/trunk/data/NetMessage/protobuf_kange
+destdir=~/source/mass/trunk/data/NetMessage/protobuf
 
 for v in `ls $destdir`; do
     if [ -f $srcdir/$v ] ; then
-        cp $srcdir/$v $destdir/$v
+        cp $srcdir/$v $destdir/$v || true
     else
-        cp $srcdir2/$v $destdir/$v
+        cp $srcdir2/$v $destdir/$v || true
     fi
 done

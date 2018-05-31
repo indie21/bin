@@ -1,0 +1,6 @@
+#!/usr/bin/expect
+set timeout 10
+spawn ssh -p 60022 yangzengyi@47.100.206.20
+expect "yangzengyi@47.100.206.20's password"
+send "Yang.123\n"
+interact
