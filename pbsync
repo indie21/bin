@@ -1,7 +1,7 @@
 #! /bin/bash
 srcdir=~/source/go/src/oops/common/pb
 srcdir2=~/source/go/src/oops/pd
-destdir=~/source/mass/trunk/data/NetMessage/protobuf
+destdir=~/source/mass/trunk/data/NetMessage/protobuf_kange/
 
 for v in `ls $destdir`; do
     if [ -f $srcdir/$v ] ; then
